@@ -1,0 +1,28 @@
+<div class="col-12 col-md-12">
+  <div class="card">
+    <div class="card-header">shanjay Component</div>
+
+    <!-- <button (click)="getList()">get name list</button> -->
+
+    <!-- <div>
+      <ul *ngFor="let user of list">
+        <li>{{user}}</li>
+      </ul>
+    </div> -->
+
+    <div class="card-body">
+      <form>
+        <div class="order-tracking">
+          <input name="shanjay" type="text" [(ngModel)]="name" />
+          <button type="button" (click)="submitme()" class="btn-btn primary">
+            Submit
+          </button>
+          <h3>{{ this.datafromchild }}</h3>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <app-child [Name] = "sendToChild"></app-child> -->
+<app-varun [item]="sendToChild" (getResponse)="getResponse($event)"></app-varun>

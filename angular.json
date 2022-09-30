@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "componentSharing"
+  "defaultProject": "componentSharing",
+  "cli": {
+    "analytics": "d9269702-aa83-4b4c-99a5-3ec5e3c47953"
+  }
 }
